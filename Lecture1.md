@@ -1,7 +1,7 @@
 Files, directories, editing and pipes
 =====================================
 
-You can list bioinfo softwareusing an absolute path:
+1) You can list bioinfo softwareusing an absolute path:
 
        ls /homes/bioinfo/bioinfo_software
 
