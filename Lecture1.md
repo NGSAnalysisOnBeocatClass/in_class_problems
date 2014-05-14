@@ -15,7 +15,7 @@ Relative path `ls` command:
 
 ## Code challenge 2
 
-Many samtools commands are tailored to work with SAM/BAM format files but they work like Unix commands (e.g. they can be joined using `|` to avoid printing uneeded intermediate files) and to speed up small jobs. When creating a workflow for samtools use `-` in place of input or output files. It is better not to use pipes on extremely large Bam or Sam files.
+Many samtools commands are tailored to work with SAM/BAM format files but they work like Unix commands (e.g. they can be joined using `|` to avoid printing uneeded intermediate files) and to speed up small jobs. When creating a workflow for samtools use `-` in place of input or output files. It is better not to use pipes on extremely large Bam or Sam files. Text that is captioned with square brakets ([]) or diamond brakets (<>) represents user specified input.
 
 Here would be typical usage:
 
@@ -53,13 +53,13 @@ Run samtools without any arguments to see which commands to use:
 Run samtools with a command but no arguments to see a detailed help menu for individual commands or read a detailed manual at http://samtools.sourceforge.net/samtools.shtml#3. Below I have added the `S` option (aka parameter) to the samtools view command "Input is in SAM. If @SQ header lines are absent, the ‘-t’ option is required." I have also added the `-b` option to the samtools view command which specifies "Output in the BAM format".
 
 ```
-/homes/bioinfo/bioinfo_software/samtools/samtools view -Sb test.sam -o test.bam 
+/homes/bioinfo/bioinfo_software/samtools/samtools view -Sb [test.sam] -o [test.bam] 
 
-/homes/bioinfo/bioinfo_software/samtools/samtools sort test.bam test_sort
+/homes/bioinfo/bioinfo_software/samtools/samtools sort [test.bam] [test_sort]
 
-/homes/bioinfo/bioinfo_software/samtools/samtools rmdup test_sort.bam test_rmdup.bam
+/homes/bioinfo/bioinfo_software/samtools/samtools rmdup [test_sort.bam] [test_rmdup.bam]
 
-/homes/bioinfo/bioinfo_software/samtools/samtools flagstat test_rmdup.bam
+/homes/bioinfo/bioinfo_software/samtools/samtools flagstat [test_rmdup.bam]
 ```
 
 Pipe these four commands together and report the flagstat summary.
