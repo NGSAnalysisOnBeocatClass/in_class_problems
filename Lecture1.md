@@ -23,7 +23,7 @@ Here would be typical usage:
        
 Here would be typical piped usage:
 
-       Usage:   samtools <command> [options] [input] - | samtools <command> [options] - - | samtools <command> [options] 
+       Usage:   samtools <command> [options] [input] - | samtools <command> [options] - - | samtools <command> [options] - [output]
 
 However, pipes depend on the program reading in from standard in and sending output to standard out by default. Because of this a couple samtools commands should be treated differently.
 
