@@ -51,6 +51,8 @@ Run samtools without any arguments to see which commands to use:
        /homes/bioinfo/bioinfo_software/samtools/samtools 
        
 Run samtools with a command but no arguments to see a detailed help menu for individual commands or read a detailed manual at http://samtools.sourceforge.net/samtools.shtml#3.
+
+```
        
 /homes/bioinfo/bioinfo_software/samtools/samtools view -Sb test.sam -o test.bam 
 
@@ -59,7 +61,7 @@ Run samtools with a command but no arguments to see a detailed help menu for ind
 /homes/bioinfo/bioinfo_software/samtools/samtools rmdup test_sort.bam test_rmdup.bam
 
 /homes/bioinfo/bioinfo_software/samtools/samtools flagstat test_rmdup.bam
-
+```
 
 Pipe these four commands together and report the flagstat summary.
 
