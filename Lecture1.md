@@ -50,10 +50,9 @@ Run samtools without any arguments to see which commands to use:
 
        /homes/bioinfo/bioinfo_software/samtools/samtools 
        
-Run samtools with a command but no arguments to see a detailed help menu for individual commands or read a detailed manual at http://samtools.sourceforge.net/samtools.shtml#3. Below I have added the `S` option (aka parameter) "Input is in SAM. If @SQ header lines are absent, the ‘-t’ option is required."
+Run samtools with a command but no arguments to see a detailed help menu for individual commands or read a detailed manual at http://samtools.sourceforge.net/samtools.shtml#3. Below I have added the `S` option (aka parameter) to the samtools view command "Input is in SAM. If @SQ header lines are absent, the ‘-t’ option is required." I have also added the `-b` option to the samtools view command which specifies "Output in the BAM format".
 
 ```
-       
 /homes/bioinfo/bioinfo_software/samtools/samtools view -Sb test.sam -o test.bam 
 
 /homes/bioinfo/bioinfo_software/samtools/samtools sort test.bam test_sort
