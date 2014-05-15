@@ -33,7 +33,7 @@ However, pipes depend on the program reading in from standard in and sending out
 
 **samtools view**
 
-`view` outputs to standard out by default so you should exclude the `-` to indicate output file.
+`samtools view` outputs to standard out by default so you should exclude the `-` that indicates output file.
 
        Usage at begining of pipe:   samtools view [options] [input] |
        
@@ -42,7 +42,7 @@ However, pipes depend on the program reading in from standard in and sending out
        
 **samtools sort**
 
-Without the -o parameter nothing is output to standard out. This means the next step in the piped workflow gets no input. The `-o` parameter for `sort` indicates that samtools should "Output the final alignment to the standard output".
+Without the -o parameter nothing is output to standard out by `samtools sort`. This means the next step in the piped workflow gets no input. The `-o` parameter for `samtools sort` indicates that samtools should "Output the final alignment to the standard output".
 
        Usage at begining of pipe:   samtools sort [options] [input] -o - |
        
