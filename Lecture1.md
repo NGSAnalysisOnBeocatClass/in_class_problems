@@ -17,7 +17,7 @@ What was your relative path `ls` command:
 
 ## Code challenge 2
 
-Durring class we learned about SAM sequence alignment format files and BAM the binary version of the same thing. Samtools is a popular bioinformatics package with many commands that manipulate SAM and BAM files.
+During class we learned about SAM sequence alignment format files and BAM the binary version of the same thing. Samtools is a popular bioinformatics package with many commands that manipulate SAM and BAM files.
 
 Many samtools commands are tailored to work with SAM/BAM format files but they work like Unix commands (e.g. they can be joined using `|` to avoid printing uneeded intermediate files) and to speed up small jobs. When creating a workflow for samtools use `-` in place of input or output files. It is better not to use pipes on extremely large Bam or Sam files. Text that is captioned with square brakets ([]) or diamond brakets (<>) represents user specified input.
 
