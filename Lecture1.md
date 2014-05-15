@@ -73,6 +73,6 @@ Pipe these four commands together and report some values from the flagstat summa
 
 Percent of reads that mapped: 
 
-Percent of reads the were properly paired: 
+Percent of reads that were properly paired: 
 
 What was your piped command: 
