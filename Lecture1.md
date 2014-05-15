@@ -13,7 +13,7 @@ Or a relative path (relative to you current working directory or your home direc
 
 Current working directory:
 
-Relative path `ls` command:
+What was your relative path `ls` command:
 
 ## Code challenge 2
 
@@ -75,4 +75,4 @@ Percent of reads that mapped:
 
 Percent of reads the were properly paired: 
 
-
+What was your piped command: 
