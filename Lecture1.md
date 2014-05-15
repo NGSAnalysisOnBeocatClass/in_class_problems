@@ -7,9 +7,10 @@ Files, directories, editing and pipes
 
        ls /homes/bioinfo/bioinfo_software
 
-Or a relative path (relative to you current working directory or your home directory). Run the pwd command and report your current directory. Write a `ls` command that uses a relative path and list `bioinfo_software`.
+Or a relative path (relative to you current working directory or your home directory). Run the pwd command and report your current directory. 
 
-## Code challenge 1 question:
+## Code challenge 1 questions:
+Write a `ls` command that uses a relative path and list `bioinfo_software`.
 
 Current working directory:
 
@@ -67,9 +68,9 @@ Below I have added the `S` option (aka parameter) to the `samtools view` command
 
 /homes/bioinfo/bioinfo_software/samtools/samtools flagstat [test_rmdup.bam]
 ```
-## Code challenge 2 question:
+## Code challenge 2 questions:
 
-Pipe these four commands together and report some values from the flagstat summary.
+For this code challenge pipe these four commands together and report some values from the flagstat summary.
 
 Percent of reads that mapped: 
 
