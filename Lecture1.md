@@ -25,7 +25,7 @@ Here would be typical piped usage:
 
        Usage:   samtools <command> [options] [input] - | samtools <command> [options] - - | samtools <command> [options] - [output]
 
-However, pipes depend on the program reading in from standard in and sending output to standard out by default. Because of this a couple samtools commands should be treated differently.
+However, pipes depend on the program reading in from standard in and sending output to standard out by default. A few samtools have a different default behavior. Because of this a couple samtools commands should be treated differently.
 
 **samtools view**
 
@@ -38,7 +38,7 @@ However, pipes depend on the program reading in from standard in and sending out
        
 **samtools sort**
 
-Without the -o parameter nothing is output to standard out. This means the next step in the piped workflow gets no input. The `-o` parameter for `sort` is indicates that samtools should "Output the final alignment to the standard output".
+Without the -o parameter nothing is output to standard out. This means the next step in the piped workflow gets no input. The `-o` parameter for `sort` indicates that samtools should "Output the final alignment to the standard output".
 
        Usage at begining of pipe:   samtools sort [options] [input] -o - |
        
