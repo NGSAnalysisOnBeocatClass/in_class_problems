@@ -7,7 +7,7 @@ Raw data files from NGS experiments are often very large. To transfer this data 
 
     USAGE: gunzip [filename ...]
 
- Today we will use wild cards in our filename and write a loop to unzip all of the fasta files in the `~/pipeline_datasets/NGS` directory.
+ Today we will use wild cards in our filename and write a loop to unzip, count sequences with `grep`, and `echo` "[Filename] has been decompressed and has [n] sequences" for each fasta file in the `~/pipeline_datasets/NGS` directory.
  
 ## Code challenge 3 questions:
 
