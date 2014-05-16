@@ -3,11 +3,13 @@ Running programs (from the Beocat head node as well as the queue), Shell scripts
 
 ## Code challenge 3
 
-Raw data files from NGS experiments are often very large. To transfer this data faster files are compressed before being downloaded or uploaded. Their are many common forms of file compression. One common form of compression is gzip, `.gz`. The `gunzip` command decompresses gzipped, `.gz`, files.
+Raw data files from NGS experiments are often very large. To transfer this data faster files are compressed before being downloaded or uploaded. Their are many forms of file compression. One common form of compression is gzip, `.gz`. The `gunzip` command decompresses gzipped, `.gz`, files.
 
     USAGE: gunzip [filename ...]
 
- Today we will use wild cards in our filename and write a loop to unzip, count sequences with `grep`, and `echo` "[Filename] has been decompressed and has [n] sequences" for each fasta file in the `~/pipeline_datasets/NGS` directory.
+Today we will use wild cards in our fasta filename so that it expands to a list of all fasta files in the `~/pipeline_datasets/NGS` directory. Wildcards are very useful for describing a list of files with a certain file extension. 
+ 
+Write a loop to (1) unzip, (2) count number of sequences with `grep`, and (3) `echo` file's name and number of sequences for each fasta file in the `~/pipeline_datasets/NGS` directory.
  
 ## Code challenge 3 questions:
 
