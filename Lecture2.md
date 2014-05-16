@@ -9,7 +9,14 @@ Raw data files from NGS experiments are often very large. To transfer this data 
 
 Today we will use wild cards in our fasta filename so that it expands to a list of all fasta files in the `~/pipeline_datasets/NGS` directory. Wildcards are very useful for describing a list of files with a certain file extension. 
  
-Write a loop to (1) unzip, (2) count number of sequences with `grep`, and (3) `echo` file's name and number of sequences for each fasta file in the `~/pipeline_datasets/NGS` directory.
+Write a loop to:
+(1) unzip 
+(2) count number of sequences with `grep`
+(3) `echo` file's name and number of sequences
+
+Do this for each fasta file in the `~/pipeline_datasets/NGS` directory.
+
+**Tip:** Remember to test your loop by first printing your commands with `echo` rather than executing them
  
 ## Code challenge 3 questions:
 
