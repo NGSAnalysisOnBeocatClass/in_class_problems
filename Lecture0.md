@@ -15,7 +15,7 @@ Command:
 
 ```
 
-  cp -i /homes/bioinfo/pipeline_datasets/sam_bam/adrenal_rep_1_tophat2_out_1/deletions.bed ~/deletions.bed
+  cp -i /homes/bioinfo/pipeline_datasets/sam_bam/adrenal_rep_1_tophat2_out_1/deletions.bed ~/
   
 ```
   
