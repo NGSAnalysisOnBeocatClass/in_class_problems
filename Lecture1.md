@@ -60,7 +60,7 @@ Run samtools with a command but no arguments to see a detailed help menu for ind
 Below I have added the `S` option (aka parameter) to the `samtools view` command. The `S` parameter indicates "input is in SAM." I have also added the `u` option to the `samtools view` command which specifies "output in the uncompressed BAM format". I would have used the `b` for "output in BAM format in place of `u` if I was not piping my workflow. Using pipes and `u` speeds up the workflow below.
 
 ```
-/homes/bioinfo/bioinfo_software/samtools/samtools view -Su [test.sam] -o [test.bam] 
+/homes/bioinfo/bioinfo_software/samtools/samtools view -Sb [test.sam] -o [test.bam] 
 
 /homes/bioinfo/bioinfo_software/samtools/samtools sort [test.bam] [test_sort]
 
