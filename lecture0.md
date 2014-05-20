@@ -1,0 +1,3 @@
+##Code challenge 0
+
+USAGE: ls [OPTION]... [FILE]...
