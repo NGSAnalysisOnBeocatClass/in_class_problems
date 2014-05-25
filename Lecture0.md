@@ -5,7 +5,7 @@ Introduction to commandline
 
 # Sample
 
-Below is a sample of a usage statement and then a command followed by the parts of the command. This command copies a file from a source location to a directory (in this case the ~/ is your home directory). The option indicates that the user will be interactively prompted before overwrite a file.
+Below is a sample of a usage statement and then a command followed by the parts of the command. This command copies a file from a source location to a directory (in this case the ~/ is your home directory). The option indicates that the user will be interactively prompted before overwriting an existing file.
 
 ```
   USAGE: cp [OPTION]... SOURCE... DIRECTORY
