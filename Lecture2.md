@@ -15,7 +15,7 @@ Write a loop to:
 
 (2) count number of sequences with `grep`
 
-(3) `echo` file's name and number of sequences
+(3) `echo` file's name and number of fasta sequences
 
 Do this for each fasta file in the `~/pipeline_datasets/NGS` directory.
 
