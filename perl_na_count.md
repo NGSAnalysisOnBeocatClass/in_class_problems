@@ -22,4 +22,6 @@ Sample Output
 20 12 17 21
 ```
 
-###Once your script works on the sample dataset go to Rosalind and run your program on a test dataset. Upload a screenshot of your "Correct!" notification from Rosalind to KSOL with the filename "CCX".
+###Once your script works on the sample dataset...
+
+go to Rosalind and run your program on a test dataset. Upload a screenshot of your "Correct!" notification from Rosalind to KSOL with the filename "CCX".
