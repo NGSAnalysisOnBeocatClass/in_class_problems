@@ -32,10 +32,14 @@ TGCGATCCCTAAGTCATCA
 AAATCGCTAGnnTCA
 ```
 
-The `grep` program searches for patterns within a file. By default it all prints lines with the pattern in the file. 
+The `grep` program searches for patterns within a file. By default it all prints lines with the pattern in the file. ** Remember: In "Usage" statements text that is bracketed with square brakets ([ ]) or diamond brakets (< >) represents user specified input.**
+
+Here would be typical usage:
+
+   Usage:   grep [OPTIONS] PATTERN [FILE...]
 
 ```
-grep "n" test.fasta
+$ grep "n" test.fasta
 ATCGATCGCnTCGGGTACT
 TCAGnAAAATGCTCTGATC
 AAATCGCTAGnnTCA
@@ -43,7 +47,7 @@ AAATCGCTAGnnTCA
 The `-c` flag tells `grep` to print the count of lines with the pattern.
 
 ```
-grep -c "n" test.fasta
+$ grep -c "n" test.fasta
 4
 ```
 
