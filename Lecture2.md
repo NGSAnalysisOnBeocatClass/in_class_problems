@@ -3,11 +3,11 @@ Files, directories, editing and pipes
 
 ## Code challenge 1
 
-`/homes/bioinfo/bioinfo_software` is a directory full of bioinformatics tools that can be executed by anyone on Beocat. You can list bioinfo software using an absolute path:
+`/homes/bioinfo/bioinfo_software` is a directory full of bioinformatics tools that can be executed by anyone on Beocat. You can list bioinfo software using an absolute path...
 
        ls /homes/bioinfo/bioinfo_software
 
-Or a relative path (relative to you current working directory or your home directory). Run the pwd command and report your current directory. 
+or a relative path (relative to you current working directory or your home directory). Run the `pwd` program to report your current working directory. 
 
 ## Code challenge 1 questions:
 Write a command with `ls` that uses a relative path and list `bioinfo_software`.
