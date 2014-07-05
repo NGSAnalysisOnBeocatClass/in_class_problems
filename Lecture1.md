@@ -69,7 +69,7 @@ In a code box lines of text preceeded by a `#` are comments. Comments are notes 
 
 If a line is longer than the screen you must scroll the code box to the right to read the end of the line. Code boxes work this way to avoid wrapping text. Everytime you hit enter in a commandline session your command is sent to the shell for evaluation. Wrapped text can introduce extra end-of-line characters and make it seem to the shell that you entered multiple brocken commands.
 
-Try reading the word finish ata the end of the line below:
+Try reading the word "finish" at the end of the line below:
 
 ```
 cd /directory/directory/directory/directory/directory/directory/directory/directory/directory/directory/directory/directory/directory/directory/directory/directory/directory/directory/directory/directory/directory/finish
