@@ -5,12 +5,15 @@ Introduction to commandline
 
 # Sample
 
-Below is a sample of a usage statement and then a command followed by the parts of the command. This command copies a file from a source location to a directory (in this case the ~/ is your home directory). The option indicates that the user will be interactively prompted before overwriting an existing file.
+Below is a sample of a usage statement and then a command followed by the parts of the command. **Text that is bracketed with square brakets `[ ]` is optional and diamond brakets `< >` represents user specified input (e.g. a filename). Ellipsis `...` indicate that one or more are welcome.**
+
 
 ```
   USAGE: cp [OPTION]... SOURCE... DIRECTORY
 ```
-  
+
+This command copies a file from a source location to a directory (in this case the ~/ is your home directory). The optional flag indicates that the user will be interactively prompted before overwriting an existing file.
+
 Command:
 
 ```
@@ -21,7 +24,7 @@ Command:
   
 Sample program: cp
 
-Sample option or options: -i
+Sample optional flag or flags: -i
 
 Sample source: /homes/bioinfo/pipeline_datasets/sam_bam/adrenal_rep_1_tophat2_out_1/deletions.bed
 
@@ -48,7 +51,7 @@ Command:
 Dissect the commands and report:
 
 
-Example 1 option or options (flags):
+Example 1 optional flag or flags:
 
 Example 1 file or path:
 
