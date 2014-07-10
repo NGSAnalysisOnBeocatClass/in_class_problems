@@ -48,7 +48,7 @@ The `-c` flag tells `grep` to print the count of lines with the pattern.
 
 ```
 $ grep -c "n" test.fasta
-4
+3
 ```
 
 ## Code challenge 2 questions:
