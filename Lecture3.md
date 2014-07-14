@@ -18,6 +18,12 @@ You don't have write permissions in the `~/class` directory. You normally want t
 Today we will use wild cards in our fasta filename so that it expands to a list of all gzipped fasta files in the `~/class/fasta/gzip` directory. Wildcards are very useful for describing a list of files with a certain file extension. 
 
 We will also use `basename` to redirect our output to a working directory instead of our raw data directory.
+
+Your shell script should run using the following command:
+
+```
+bash ~/scripts/expand_fasta.sh ~/class/fasta/gzip/*.gz
+```
  
 Write a shell script called `~/scripts/expand_fasta.sh` to:
 
