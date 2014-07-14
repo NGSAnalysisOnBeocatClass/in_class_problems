@@ -1,4 +1,4 @@
-Running programs (from the Beocat head node as well as the queue), Shell scripts
+Using shell scripts, loops and variables to repeat tasks 
 ================================================================================
 
 ## Code challenge 3
