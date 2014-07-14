@@ -7,17 +7,29 @@ Raw data files from NGS experiments are often very large. To transfer this data 
 
     USAGE: gunzip [filename ...]
 
-Today we will use wild cards in our fasta filename so that it expands to a list of all fasta files in the `~/class/fasta/gzip` directory. Wildcards are very useful for describing a list of files with a certain file extension. 
+You can re-direct gunzip output using the `-c` flag and `>`. For example:
+
+```
+gunzip -c my.fasta.gz > ~/output/my.fasta
+```
+
+You don't have write permissions in the `~/class` directory. You normally want to keep your raw data separate from your working directory and remove write permissions from your raw data directory. We will learn to set permissions next class.
+
+Today we will use wild cards in our fasta filename so that it expands to a list of all gzipped fasta files in the `~/class/fasta/gzip` directory. Wildcards are very useful for describing a list of files with a certain file extension. 
+
+We will also use `basename` to redirect our output to a working directory instead of our raw data directory.
  
-Write a loop to:
+Write a shell script called `~/scripts/expand_fasta.sh` to:
 
-(1) unzip 
+(1) Take any number of .gz fasta files as input
 
-(2) count number of sequences with `grep`
+(2) Make a `for` loop that defines each .gz fasta file as the variable FILE and does the following:
+    
+    (a) define BASE as the basename of the file (without the .gz extension)
+    (b) gunzip the FILE and redirect the output to `~/output` with the basename as the file's name
+    (c) define COUNT as the number of sequences in the file using the `grep` command
+    (d) `echo` file's name and number of fasta sequences
 
-(3) `echo` file's name and number of fasta sequences
-
-Do this for each fasta file in the `~/class/fasta/gzip` directory.
 
 **Tip:** Remember to test your loop by first printing your commands with `echo` rather than executing them
  
@@ -25,5 +37,4 @@ Do this for each fasta file in the `~/class/fasta/gzip` directory.
 
 What was your code:
 
-What was your output:
  
