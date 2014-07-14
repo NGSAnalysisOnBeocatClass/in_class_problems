@@ -7,7 +7,7 @@ Raw data files from NGS experiments are often very large. To transfer this data 
 
     USAGE: gunzip [filename ...]
 
-Today we will use wild cards in our fasta filename so that it expands to a list of all fasta files in the `~/pipeline_datasets/NGS` directory. Wildcards are very useful for describing a list of files with a certain file extension. 
+Today we will use wild cards in our fasta filename so that it expands to a list of all fasta files in the `~/class/fasta/gzip` directory. Wildcards are very useful for describing a list of files with a certain file extension. 
  
 Write a loop to:
 
