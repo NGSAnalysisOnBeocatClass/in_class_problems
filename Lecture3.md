@@ -17,7 +17,7 @@ Write a loop to:
 
 (3) `echo` file's name and number of fasta sequences
 
-Do this for each fasta file in the `~/pipeline_datasets/NGS` directory.
+Do this for each fasta file in the `~/class/fasta/gzip` directory.
 
 **Tip:** Remember to test your loop by first printing your commands with `echo` rather than executing them
  
