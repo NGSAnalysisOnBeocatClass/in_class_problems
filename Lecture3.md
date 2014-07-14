@@ -24,7 +24,8 @@ Your shell script should run using the following command:
 ```
 bash ~/scripts/expand_fasta.sh ~/class/fasta/gzip/*.gz
 ```
- 
+## Code challenge 3 steps:
+
 Write a shell script called `~/scripts/expand_fasta.sh` to:
 
 (1) Take any number of .gz fasta files as input
