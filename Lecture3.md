@@ -26,9 +26,9 @@ Write a shell script called `~/scripts/expand_fasta.sh` to:
 (2) Make a `for` loop that defines each .gz fasta file as the variable FILE and does the following:
     
     (a) define BASE as the basename of the file (without the .gz extension)
-    (b) gunzip the FILE and redirect the output to `~/output` with the basename as the file's name
-    (c) define COUNT as the number of sequences in the file using the `grep` command
-    (d) `echo` file's name and number of fasta sequences
+    (b) gunzip the FILE and redirect the output to ~/output with the basename as the file's name
+    (c) define COUNT as the number of sequences in the file using the grep command
+    (d) print the file's name and number of fasta sequences using echo and your $BASE and $FILE variables
 
 
 **Tip:** Remember to test your loop by first printing your commands with `echo` rather than executing them
