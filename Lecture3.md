@@ -44,4 +44,40 @@ Write a shell script called `~/scripts/expand_fasta.sh` to:
 
 What was your code:
 
- 
+## Code challenge 4
+
+Fasta headers indicate if a paired end read is in the forward or reverse orientation. Older Illumina headers ended in `/1` for forward reads or `/2` for reverse. Illumina changed the read headers to include that information inside of the header rather than at the end.
+
+Most bioinformatics tools did not change their expectation that headers end in `/1` for forward reads or `/2` for reverse. To make sure your tools know which forward read pairs with which reverse read you should reformat your headers if they are for paired end reads and do not end in `/1` or `/2`.
+
+Useful code already exists to do this at http://www.freelists.org/post/mira_talk/Metagenome-assembly,4. 
+
+The conversation explains that you can convert headers using existing bash code after replacing the input filename and output filename with your own:
+
+```
+USAGE: cat INPUT.fastq | awk '{if (NR % 4 == 1) {split($1, arr, ":"); printf "%s_%s:%s:%s:%s:%s#0/%s\n", arr[1], arr[3], arr[4], arr[5], arr[6], arr[7], substr($2, 1, 1), $0} else if (NR % 4 == 3){print "+"} else {print $0} }' > OUTPUT.fastq
+```
+
+When a sequencing run is done you get many fastq files. I have tested the code above many times and it works to convert new Illumina paired end read headers to the older format that end in `/1` or `/2`.
+
+Your shell script should run using the following command:
+
+```
+bash ~/scripts/convert_headers.sh ~/class/fastq/header/*.fastq
+```
+
+##Code challenge 4 steps:
+
+Write a shell script called `~/scripts/convert_headers.sh` to:
+
+(1) Take any number of fastq files as input
+
+(2) Make a for loop that defines each fastq file as the variable FILE and does the following:
+
+    (a) define BASE as the basename of the file (without the .fastq extension)
+    (b) use the tested code with FILE as the input and redirect the output to ~/output with the basename plus "_header" as the file's name and .fastq as the extension
+
+
+## Code challenge 4 questions:
+
+What was your code:
