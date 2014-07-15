@@ -60,6 +60,8 @@ USAGE: cat INPUT.fastq | awk '{if (NR % 4 == 1) {split($1, arr, ":"); printf "%s
 
 When a sequencing run is done you get many fastq files. I have tested the code above many times and it works to convert new Illumina paired end read headers to the older format that end in `/1` or `/2`.
 
+When creating a new comple filename or string with variables you should braken your variable with curly bracketts (e.g. `~/output/${BASE}_header.fastq`).
+
 Your shell script should run using the following command:
 
 ```
