@@ -32,7 +32,7 @@ TGCGATCCCTAAGTCATCA
 AAATCGCTAGnnTCA
 ```
 
-The `grep` program searches for patterns within a file. By default it all prints lines with the pattern in the file. ** Remember: In "Usage" statements text that is capitalized, bracketed with square brakets ([ ]) or diamond brakets (< >) represents user specified input.**
+The `grep` program searches for patterns within a file. By default it all prints lines with the pattern in the file. ** Remember: In "Usage" statements text that is capitalized represents user specified input and optional arguments are bracketed with square brakets ([ ]).**
 
 Here would be typical usage:
 
