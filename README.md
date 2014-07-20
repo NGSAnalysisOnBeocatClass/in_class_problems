@@ -17,3 +17,5 @@ Code challenges to be completed in class during lecture
 ##Running programs (from the Beocat head node as well as the queue), Shell scripts
 
 [Code challenge 3](https://github.com/NGSAnalysisOnBeocatClass/in_class_problems/blob/master/Lecture2.md#code-challenge-3) - loops to prepare raw data
+
+[Code challenge 4](https://github.com/NGSAnalysisOnBeocatClass/in_class_problems/blob/master/Lecture3.md#code-challenge-4) - convert new Illumina data and use existing code in new scripts
