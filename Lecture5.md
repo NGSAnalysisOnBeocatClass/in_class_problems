@@ -68,7 +68,11 @@ velvetg DIR -read_trkg yes
 oases DIR
 ```
 
-(6) make your script executable using `chmod 755`.
+(6) make your script executable using `chmod 755`. Your script should now run with the command:
+
+```
+./scripts/assemble_t.pl
+```
 
 ## Code challenge 6
 
@@ -122,5 +126,9 @@ velvetg DIR_K -read_trkg yes
 oases DIR_K
 ```
 
-(4) make your script executable using `chmod 755`.
+(4) make your script executable using `chmod 755`. Your script should now run with the command:
+
+```
+./scripts/kmer_assemble_t.pl
+```
 
