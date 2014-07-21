@@ -2,6 +2,23 @@ Scalar, lists and arrays and control structures in Perl
 =======================================================
 ## Code challenge 5
 
+We will use the `say` command in Perl to print our single or double quoted strings with newline characters automatically so we should add the following to our script before `use strict`:
+
+```
+use 5.010;
+```
+
+Now our script should start with :
+
+```
+#!/usr/bin/perl
+# USAGE:
+# DESCRIPTION:
+use 5.010; # this script requires Perl 5.10 or greater
+use strict;
+use warnings;
+```
+
 ## Code challenge 5 questions:
 Write a Perl script called `~/scripts/assemble_t.pl` to:
 
