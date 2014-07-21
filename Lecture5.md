@@ -93,7 +93,7 @@ This is not recommended (very slow) and some assemblers will not allow it.
 
 We will use a special kind of for loop (a C-style for loop) to go from a minimum value to a maximum value incrementing by some number each time. 
 
-Below is an example of a for loop that prints the values from 1 to 100 by increments of 10
+Below is an example of a for loop that prints the values from 0 to 100 by increments of 10:
 
 ```
 for ( my $k = 0; $k <= 100; $k += 10)
