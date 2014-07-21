@@ -2,6 +2,20 @@ Scalar, lists and arrays and control structures in Perl
 =======================================================
 ## Code challenge 5
 
+Popular bioinformatics tools often have separate programs that you call to complete your analysis. They also have their own usage statments and rules for passing your input arguments to them. It is a good idea to write a script to properly format these commands so that you do not introduce errors the next time you run the program.
+
+When assembling Illumina fastq reads you should use a de Bruijn graph assembler. When assembling transcriptomes from Illumina fastq reads you should use a de Bruijn graph assembler that has been modified specfically for transcriptomes.
+
+We will be writting commands for velvet (a de Bruijn graph genome assembler) and oases (a program developed to take initial output of velvet and run a transcriptome assembly). You can read a detailed list of parameter options for Oases transcriptome assembler by visiting the Oases manual at https://www.ebi.ac.uk/~zerbino/oases/.
+
+You can print help menus for the three programs in the commands below by typing:
+
+```
+/homes/bioinfo/bioinfo_software/velvet/velveth
+/homes/bioinfo/bioinfo_software/velvet/velvetg
+/homes/bioinfo/bioinfo_software/oases/oases
+```
+
 We will use the `say` command in Perl to print our single or double quoted strings with newline characters automatically so we should add the following to our script before `use strict`:
 
 ```
