@@ -25,19 +25,19 @@ Write a Perl script called `~/scripts/assemble_t.pl` to:
 (1) define your forward reads as `$fastq1` and set this value to:
 
 ```
-/homes/bioinfo/de_novo_transcriptome_2/cell_line_good_1.fastq
+'/homes/bioinfo/de_novo_transcriptome_2/cell_line_good_1.fastq'
 ```
 
 (2) define your reverse reads as `$fastq2` and set this value to:
 
 ```
-/homes/bioinfo/de_novo_transcriptome_2/cell_line_good_2.fastq
+'/homes/bioinfo/de_novo_transcriptome_2/cell_line_good_2.fastq'
 ```
 
 (3) define your output directory as `$assembly_dir` and set this value to:
 
 ```
-out_put/assemble_t_23
+'out_put/assemble_t_23'
 ```
 
 (3) write a line of code to print this line using single quotes:
@@ -53,3 +53,6 @@ velveth DIR 23 -shortPaired -fastq -separate FASTQ1 FASTQ2
 velvetg DIR -read_trkg yes
 oases DIR
 ```
+
+(5) make your script executable using `chmod 755`.
+
