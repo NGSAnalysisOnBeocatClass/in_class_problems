@@ -74,7 +74,7 @@ oases DIR
 
 ## Code challenge 6 questions:
 
-Make a copy or your Perl script called `~/scripts/assemble_t.pl` and name this copy `~/scripts/kmer_assemble_t.pl` using the `cp` Bash command.
+Make a copy or your Perl script called `~/scripts/assemble_t.pl` and name this copy `~/scripts/kmer_assemble_t.pl` using the `cp` Bash command. **Edit your `~/scripts/kmer_assemble_t.pl` script for this code challenge.**
 
 (1) Redefine your output directory as `$assembly_dir` and set this value to:
 
@@ -93,11 +93,13 @@ for ( my $k = 0; $k <= 100; $k += 10)
 }
 ```
 
-(3) Change the inside of the code block you just created to replace the letter `K` with your variable for k. Remember to put your variables in curly braces when printing them witout white spaces surrounding them. All other variables can be called in the same way you did in code challenge 5.
+(3) Change the inside of the code block you just created to replace the letter `K` with your variable for k. Remember to put your variables in curly braces when printing them without white spaces surrounding them. All other variables can be used in the same way you did in code challenge 5.
 
 ```
 velveth DIR_K K -shortPaired -fastq -separate FASTQ1 FASTQ2 
 velvetg DIR_K -read_trkg yes
 oases DIR_K
 ```
+
+(4) make your script executable using `chmod 755`.
 
