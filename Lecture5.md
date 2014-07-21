@@ -34,18 +34,18 @@ use warnings;
 ```
 
 ## Code challenge 5 questions:
-Write a Perl script called `~/scripts/assemble_t.pl` to:
+Create a Perl script called `~/scripts/assemble_t.pl` to:
 
 (1) define your forward reads as `$fastq1` and set this value to:
 
 ```
-'/homes/bioinfo/de_novo_transcriptome_2/cell_line_good_1.fastq'
+'~/class/cell_line_good_1.fastq'
 ```
 
 (2) define your reverse reads as `$fastq2` and set this value to:
 
 ```
-'/homes/bioinfo/de_novo_transcriptome_2/cell_line_good_2.fastq'
+'~/class/cell_line_good_2.fastq'
 ```
 
 (3) define your output directory as `$assembly_dir` and set this value to:
@@ -69,4 +69,35 @@ oases DIR
 ```
 
 (6) make your script executable using `chmod 755`.
+
+## Code challenge 6
+
+## Code challenge 6 questions:
+
+Make a copy or your Perl script called `~/scripts/assemble_t.pl` and name this copy `~/scripts/kmer_assemble_t.pl` using the `cp` Bash command.
+
+(1) Redefine your output directory as `$assembly_dir` and set this value to:
+
+```
+'out_put/assemble_t'
+```
+
+(2) Put your code from step 5 in code challenge 5 into a for loop now that iterates through all **odd values from 25 to 39**. We will use a special kind of for loop to go from a minimum value to a maximum value incrementing by some number each time. 
+
+Below is an example of a for loop that prints the values from 1 to 100 by increments of 10
+
+```
+for ( my $k = 0; $k <= 100; $k += 10)
+{
+    say $k;
+}
+```
+
+(3) Change the inside of the code block you just created to replace the letter `K` with your variable for k. Remember to put your variables in curly braces when printing them witout white spaces surrounding them. All other variables can be called in the same way you did in code challenge 5.
+
+```
+velveth DIR_K K -shortPaired -fastq -separate FASTQ1 FASTQ2 
+velvetg DIR_K -read_trkg yes
+oases DIR_K
+```
 
