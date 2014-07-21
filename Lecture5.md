@@ -72,17 +72,26 @@ oases DIR
 
 ## Code challenge 6
 
-## Code challenge 6 questions:
+de Bruijn graph assemblers use a parameter called kmer length (sometimes written as kmer or k) to assemble. Many assemblers recommend you assemble with a range of kmer values and either select your best assembly or merge all of your assemblies.
 
-Make a copy or your Perl script called `~/scripts/assemble_t.pl` and name this copy `~/scripts/kmer_assemble_t.pl` using the `cp` Bash command. **Edit your `~/scripts/kmer_assemble_t.pl` script for this code challenge.**
+Generally people select a minimum kmer that is less than half the read length and a maximum that is greater than half the read length. People also choose a value to increment through the minimum and maximums. Some people explore less of this range and increment by every tenth value and some explore more an increment by every other value. The former is slower but may generate difficult to assemble transcripts the latter is faster and may generate less redundant transcripts if you choose to merge your assemblies.
 
-(1) Redefine your output directory as `$assembly_dir` and set this value to:
+You can read more about this in the OasesM paper (see http://bioinformaticsk-state.blogspot.com/2012/09/oases-m-multi-k-mer.html for a link to the paper).
+
+You can use loops in perl to automatically write code to assemble the same fastq reads for each kmer that you want and direct the output to separate working directories. This saves you even more time and again decreases the chance of introducing errors into your code.
+
+If you wanted to use every kmer value between your minimum and maximum you could use a range operate to iterate through your min and max values like below:
 
 ```
-'out_put/assemble_t'
+for my $k (25..39)
+{
+    say $k;
+}
 ```
 
-(2) Put your code from step 5 in code challenge 5 into a for loop now that iterates through all **odd values from 25 to 39**. We will use a special kind of for loop to go from a minimum value to a maximum value incrementing by some number each time. 
+This is not recommended (very slow) and some assemblers will not allow it.
+
+We will use a special kind of for loop (a C-style for loop) to go from a minimum value to a maximum value incrementing by some number each time. 
 
 Below is an example of a for loop that prints the values from 1 to 100 by increments of 10
 
@@ -93,7 +102,19 @@ for ( my $k = 0; $k <= 100; $k += 10)
 }
 ```
 
-(3) Change the inside of the code block you just created to replace the letter `K` with your variable for k. Remember to put your variables in curly braces when printing them without white spaces surrounding them. All other variables can be used in the same way you did in code challenge 5.
+## Code challenge 6 questions:
+
+Make a copy or your Perl script called `~/scripts/assemble_t.pl` and name this copy `~/scripts/kmer_assemble_t.pl` using the `cp` Bash command. **Edit your `~/scripts/kmer_assemble_t.pl` script for this code challenge.**
+
+(1) Redefine your output directory as `$assembly_dir` and set this value to:
+
+```
+'out_put/assemble_t'
+```
+
+(2) Put your code from step 5 in code challenge 5 into a for loop now that iterates through all **odd values from 25 to 39 using a C-style for loop**. 
+
+(3) Change the inside of the code block you just created to replace the letter `K` with your variable for the kmer length. Remember to put your variables in curly braces when printing them without white spaces surrounding them. All other variables should used in the same way you did in code challenge 5.
 
 ```
 velveth DIR_K K -shortPaired -fastq -separate FASTQ1 FASTQ2 
