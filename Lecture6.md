@@ -20,9 +20,9 @@ if (/^>/)
 }
 ```
 
-The `^` here indicates that the character is achored to the start of the line (e.g. it is the first character in the line).
+The `^` here indicates that the character is anchored to the start of the line (e.g. it is the first character in the line).
 
-If we want to match another variable in Perl we use the match operator `=~`. So to test if the variable `$na` has the letter A in it I could write:
+If we want to match a variable other than `$_` in Perl we use the match operator `=~`. So to test if the variable `$na` has the letter A in it we could write:
 
 ```
 $na =~ /a/i
