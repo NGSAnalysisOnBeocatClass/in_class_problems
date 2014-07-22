@@ -3,6 +3,8 @@ Arrays and Control loops in Perl in depth
 
 ## Code challenge 7
 
+Using our current skills we can start to see how to write code to customize analysis of text files. 
+
 We can use pattern matching in perl similar to the way we used it in grep to find or skip a simple pattern. In Perl if we want to test if `$_` begins with `>` we could write the following code:
 
 ```
@@ -28,19 +30,27 @@ The `i` after the slash indicates I want to match upper or lowercase letters.
 
 Create a Perl script called `~/scripts/count_bases.pl`. Edit this script for your code challenge.
 
-(1) Initilize `$fasta` as the first argument in `@ARGV`.
+(I) Initilize `$fasta` as the first argument in `@ARGV`.
 
-(2) Open `$fasta` as the filehandle `FASTA`. Open the file as "read only".
+(II) Initialize variables to hold the count of A's, C's, G's, T's or IUPAC ambiguous bases.
 
-(3) Write a while loop to read lines from `FASTA` using the diamond operator.
+(III) Open `$fasta` as the filehandle `FASTA`. Open the file as "read only".
 
-(4) Create an `unless` loop within your code block from step 3 to skip lines that start with `>`.
+(IV) Write a while loop to read lines from `FASTA` using the diamond operator.
 
-(5) With in the `unless` loop:
+  (A) Create an `unless` loop within your code block from step IV to skip lines that start with `>`. Within the `unless` loop:
 
- (a) remove new line characters
+    (1) remove new line characters
 
- (b) split the sequence at each character using `split` and save these values as `@seq`
+    (2) split the sequence at each character using `split` and save all these values as `@seq`
  
- (c)
+    (3) loop through each character with a for loop
+    
+        (i) within the for loop write five conditional loops in a row testing if the character is an A or a C or a G or a T or an IUPAC ambiguous base (anything else). If the character is one of these increment the counter for that character.
+        
+(V) close all code blocks
+
+(VI) print how many A's, C's, G's, T's or IUPAC ambiguous bases are in the fasta file
+
+    
 
