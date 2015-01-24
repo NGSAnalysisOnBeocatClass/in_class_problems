@@ -12,7 +12,7 @@ Below is a sample of a usage statement and then a command followed by the parts 
   USAGE: cp [OPTION]... SOURCE... DIRECTORY
 ```
 
-This command copies a file from a source location to a directory (in this case the ~/ is your home directory). The optional flag indicates that the user will be interactively prompted before overwriting an existing file.
+This command copies a file from a source location to a directory (in this case the ~/ is your home directory). The optional `-i` flag indicates that the user will be interactively prompted before overwriting an existing file.
 
 Command:
 
