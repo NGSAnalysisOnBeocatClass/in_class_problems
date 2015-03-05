@@ -20,7 +20,7 @@ What was your relative path `ls` command:
 
 Each sequence in a fasta file begins with a header line (">" followed by a sequence id). Sequence data follows and is usually wrapped (making multiple lines).
 
-Here is a simple example of a fasta file called test.fasta.
+Here is a simple example of a fasta file called `test.fasta`.
 
 ```
 >seq1
@@ -53,6 +53,18 @@ $ grep -c "n" test.fasta
 
 ## Code challenge 2 questions:
 Given what you know about fasta file format, write a command with `grep` using the `-c` flag that will return the number of sequences in each fasta file in `~/class/fasta`.
+
+**Here again is a simple example of a fasta file called `test.fasta`.
+
+```
+>seq1
+ATCGATCGCnTCGGGTACT
+TCAGnAAAATGCTCTGATC
+TCAG
+>seq2
+TGCGATCCCTAAGTCATCA
+AAATCGCTAGnnTCA
+```
 
 Number of sequences in each file:
 
