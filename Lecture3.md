@@ -58,7 +58,7 @@ The conversation explains that you can convert headers using existing bash code 
 USAGE: cat INPUT.fastq | awk '{if (NR % 4 == 1) {split($1, arr, ":"); printf "%s_%s:%s:%s:%s:%s#0/%s\n", arr[1], arr[3], arr[4], arr[5], arr[6], arr[7], substr($2, 1, 1), $0} else if (NR % 4 == 3){print "+"} else {print $0} }' > OUTPUT.fastq
 ```
 
-When a sequencing run is done you get many fastq files. I have tested the code above many times and it works to convert new Illumina paired end read headers to the older format that end in `/1` or `/2`.
+When a sequencing run is done you get many fastq files. I have tested the code above many times and it works to convert new Illumina paired end read headers to the older format that end in `/1` or `/2`. Now we would like to create a shell script that takes a one or more fastq files as arguments and outputs fastq files with converted headers. This way we can save time by not having to type out a command for each fastq file produced in a sequencing run.
 
 When creating a new comple filename or string with variables you should braken your variable with curly bracketts (e.g. `~/output/${BASE}_header.fastq`).
 
