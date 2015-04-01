@@ -18,7 +18,9 @@ What was your relative path `ls` command:
 
 ## Code challenge 2
 
-Each sequence in a FASTA file begins with a header line (">" followed by an optional sequence id). **Note that the optional sequence id or header can using any characters. However the `>` symbol is required in FASTA format.** Sequence data follows and is usually wrapped (making multiple lines).
+FASTA files contain either nucleic acid (DNA or RNA) or amino acid (protein) sequences. Acceptable file extensions for FASTA files are `.fa`, `.fasta`, `.fna` (for nucleic acids) or `.faa` (for amino acids). Read more about FASTA format at http://www.ncbi.nlm.nih.gov/BLAST/blastcgihelp.shtml. 
+
+Each sequence in a FASTA file begins with a header line (">" followed by an optional sequence id). **Note that the optional sequence id or header can use any characters. However the `>` symbol is required in FASTA format.** Sequence data follows and is usually wrapped (making multiple lines).
 
 Here is a simple example of a FASTA file called `test.fasta`.
 
@@ -57,11 +59,11 @@ Given what you know about FASTA file format, write a command with `grep` using t
 **Here again is a simple example of a fasta file called `test.fasta`.**
 
 ```
->seq1
+>my_header1
 ATCGATCGCnTCGGGTACT
 TCAGnAAAATGCTCTGATC
 TCAG
->seq2
+>my_header2
 TGCGATCCCTAAGTCATCA
 AAATCGCTAGnnTCA
 ```
